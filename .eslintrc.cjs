@@ -23,10 +23,5 @@ module.exports = {
   },
   rules: {
     'import/no-cycle': 'off',
-  },
-  overrides: [
-    {
-      files: ['app/**/*.ts', 'app/**/*.tsx'],
-    },
-  ],
+  }
 };
