@@ -1,0 +1,9 @@
+{
+  "include": ["src"],
+  "extends": "@kurocado-studio/styleguide/tsconfig/react",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "vite.config.ts"]
+}

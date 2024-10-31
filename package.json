@@ -1,0 +1,32 @@
+{
+  "name": "@kurocado-studio/styleguide-npm-template",
+  "version": "0.0.0-semantically-released",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commitlint": "pnpm exec commitlint --edit",
+    "eslint-check": "eslint --max-warnings=0 .",
+    "prepare": "husky install",
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --check . --write",
+    "semantic-release": "semantic-release",
+    "test": "vitest run",
+    "build": "echo \"no build needed\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@kurocado-studio/styleguide": "^1.2.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "semantic-release": "^23.0.2",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}
