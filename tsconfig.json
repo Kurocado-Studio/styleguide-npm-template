@@ -2,15 +2,12 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": [
     "@kurocado-studio/qa/npm/tsconfig.qa",
-    "@kurocado-studio/styleguide/node/tsconfig"
+    "@kurocado-studio/styleguide/react/tsconfig"
   ],
   "compilerOptions": {
     "skipLibCheck": true,
     "rootDir": ".",
     "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    },
     "jsx": "preserve"
   },
   "include": [
@@ -21,7 +18,6 @@
     "test/**/*.test.ts",
     "test/**/*.test.tsx",
     "tsup.config.ts",
-    "vite.config.ts",
     "vitest.config.ts"
   ],
   "exclude": ["node_modules"]
