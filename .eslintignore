@@ -3,6 +3,6 @@
 codesanbox
 devcontainer
 node_modules
-vitest.config.ts
+vite.config.ts
 setup.react.ts
 

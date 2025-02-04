@@ -1,9 +1,27 @@
 {
-  "include": ["src"],
-  "extends": "@kurocado-studio/styleguide/tsconfig/react",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": [
+    "@kurocado-studio/qa/remix/tsconfig.qa",
+    "@kurocado-studio/styleguide/remix/tsconfig"
+  ],
   "compilerOptions": {
-    "rootDir": "./src",
-    "esModuleInterop": true
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "jsx": "react"
   },
-  "exclude": ["node_modules", "vite.config.ts", "setup.react.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "setup.remix.ts",
+    "tailwind.config.ts",
+    "test/**/*.test.ts",
+    "test/**/*.test.tsx",
+    "vite.config.ts",
+    "vitest.config.ts"
+  ],
+  "exclude": ["node_modules"]
 }

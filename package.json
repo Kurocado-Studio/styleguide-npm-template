@@ -14,12 +14,13 @@
     "build": "echo \"no build needed\" && exit 0"
   },
   "keywords": [],
-  "author": "",
+  "author": "@kurocado-studio",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
-    "@kurocado-studio/styleguide": "^1.2.0",
+    "@kurocado-studio/qa": "1.0.0-alpha.29",
+    "@kurocado-studio/styleguide": "2.0.0-alpha.15",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
