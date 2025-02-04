@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": [
-    "@kurocado-studio/qa/remix/tsconfig.qa",
-    "@kurocado-studio/styleguide/remix/tsconfig"
+    "@kurocado-studio/qa/npm/tsconfig.qa",
+    "@kurocado-studio/styleguide/node/tsconfig"
   ],
   "compilerOptions": {
     "skipLibCheck": true,
@@ -11,15 +11,16 @@
     "paths": {
       "~/*": ["./src/*"]
     },
-    "jsx": "react"
+    "jsx": "preserve"
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "setup.remix.ts",
+    "setup.npm.ts",
     "tailwind.config.ts",
     "test/**/*.test.ts",
     "test/**/*.test.tsx",
+    "tsup.config.ts",
     "vite.config.ts",
     "vitest.config.ts"
   ],
